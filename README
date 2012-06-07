@@ -1,0 +1,20 @@
+picy
+----
+ a program which depends libthis, which in turn is dependent on libsomething
+
+picy-v2
+-------
+ a program which depends on libsomething
+
+this
+----
+ a static library dependent on libsomething
+
+something
+------------
+ a static library
+
+
+NOTE: currently src/picy is built by specifying dependecies libthis.a and
+      libsomething.a, even though libsomething.a is a dependecy for libthis.a
+      and not a direct dependency for src/picy
